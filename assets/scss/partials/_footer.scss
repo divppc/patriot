@@ -1,0 +1,61 @@
+/*FOOTER*/
+footer {
+	background: url("assets/images/footer-bg.png") no-repeat center / cover;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		font-size: 14px;
+		color: #fff;
+		padding-top: 25px;
+		padding-bottom: 30px;
+
+		@media (min-width: $responsive-tablet) {
+			justify-content: space-between;			
+		}
+	}
+
+	.copyright {
+		order: 2;
+		flex-basis: 100%;
+		text-align: center;
+		padding-top: 35px;
+
+		@media (min-width: $responsive-tablet) {
+			order: inherit;
+			flex-basis: auto;
+		}
+	}
+
+	.footer-nav {
+		
+		ul {
+			
+			@media (min-width: $responsive-mobile) {
+				column-count: 2;
+			}
+		}
+
+		li {
+			display: block;			
+
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+
+			@media (min-width: $responsive-mobile) {
+				max-width: 220px;
+			}
+		}
+
+		a {
+			color: #fff;
+			font-weight: 700;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,85 @@
+/*!
+ * Theme Name: Patriot
+ * Theme URI: http://patriot.div.agency
+ * Author: Okal Ihor
+ * Author URI: http://div.agency
+ * Version: 1.0
+ */
+/* COMMON */
+@import 'variables';
+/* GENERAL */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Play', sans-serif;
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0;
+	background: #2f4272;
+	padding: 0;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 10px;
+	@media (min-width: $responsive-desktop) {
+		padding: 0;
+	}
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	transition: 0.3s;
+}
+.clearfix {
+	&:before,
+	&:after {
+		content: ' ';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+}
+
+
+/* PARTIALS */
+@import 'partials/menu';
+@import 'partials/header';
+@import 'partials/footer';
+
+/* PAGES */
+@import 'pages/main';

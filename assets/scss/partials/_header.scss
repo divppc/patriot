@@ -1,0 +1,107 @@
+/*HEADER*/
+header {
+	position: relative;
+	max-width: 100%;
+	padding: 20px 0 25px 0;
+
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 50vw;
+		min-height: 300px;
+		background: url("assets/images/header-bg.png") no-repeat center top / cover;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	.top-line {
+		text-align: center;
+	}
+
+	.logo {		
+		float: left;
+		max-width: 150px;
+
+		@media (min-width: $responsive-tablet) {
+			max-width: 100%;
+		}
+
+		@media (min-width: $responsive-desktop) {
+			float: none;
+			margin: 0 auto 0 195px;
+		}
+
+		a {
+			display: block;
+		}
+
+
+		img {
+			display: block;
+			max-width: 100%;
+
+			@media (min-width: $responsive-tablet) {
+				display: inline-block;
+			}
+		}		
+	}
+
+	.mobile-toggler {
+		display: block;
+		float: right;
+		padding-top: 20px;
+
+		@media (min-width: $responsive-tablet) {
+			display: none;
+		}
+	}
+
+	.header-contacts {
+		max-width: 195px;
+		float: right;
+		text-align: left;
+		display: none;
+
+		@media (min-width: $responsive-tablet) {
+			display: block;
+		}
+
+		a {
+			display: block;
+		}
+
+		.tel {
+			font-size: 24px;
+			color: #fff;
+			letter-spacing: -0.5px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		p {
+			font-size: 16px;
+			color: #323033;
+			margin: 5px 0;
+		}
+
+		.cb {
+			font-size: 13px;
+			color: #505152;
+			text-transform: uppercase;
+			height: 36px;
+			line-height: 36px;
+			background: #f8e755;
+			text-align: center;
+
+			&:hover {
+				background: darken(#f8e755, 10%);
+			}
+		}
+	}
+}
