@@ -132,8 +132,12 @@ section.pagination {
 					content: '';
 					width: 18px;
 					height: 13px;
-					margin-right: 15px;
+					margin-right: 5px;
 					background: url("assets/images/sprite.png") no-repeat 0px -30px;
+
+					@media (min-width: $responsive-tablet) {
+						margin-right: 15px;
+					}
 				}
 			}
 
@@ -144,8 +148,12 @@ section.pagination {
 					content: '';
 					width: 18px;
 					height: 13px;
-					margin-left: 15px;
+					margin-left: 5px;
 					background: url("assets/images/sprite.png") no-repeat 0px -43px;
+
+					@media (min-width: $responsive-tablet) {
+						margin-left: 15px;
+					}
 				}
 			}
 		}

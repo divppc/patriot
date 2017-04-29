@@ -1,0 +1,38 @@
+/*ARTICLE*/
+section.article {
+
+	.publish-date {
+		font-size: 18px;
+		color: #fbd96e;
+		margin-bottom: 20px;
+
+		@media (min-width: $responsive-tablet) {
+			margin-bottom: 35px;
+		}
+	}
+
+	.article-container {
+		font-size: 14px;
+		color: #2f2f2f;
+		line-height: 22px;
+
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 0 auto 20px;
+
+			@media (min-width: $responsive-tablet) {
+				float: left;
+				margin: 0 20px 10px 0;
+			}
+		}
+	}
+
+	p,
+	ul {
+		
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+}

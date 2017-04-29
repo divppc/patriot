@@ -1,0 +1,62 @@
+/*ARTICLES*/
+section.articles-list {
+
+	article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		@media (min-width: $responsive-tablet) {
+			flex-wrap: nowrap;
+			margin-bottom: 85px;
+		}
+	}
+
+	.img-holder {
+		flex-basis: 100%;
+		margin: 0 auto 20px;
+
+		@media (min-width: $responsive-tablet) {
+			flex-basis: auto;
+			margin: 0 20px 0 0;
+			flex-shrink: 0;
+		}
+
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	h3 {
+		margin: 0 0 20px 0;
+		font-weight: 700;
+		font-size: 18px;
+		color: #2f2f2f;
+	}
+
+	span {
+		font-size: 14px;
+		color: #000;
+	}
+
+	p {
+		margin: 10px 0 15px 0;
+		font-size: 14px;
+		color: #2f2d2e;
+		line-height: 18px;
+	}
+
+	a {
+		font-size: 14px;
+		color: #6a6a6a;
+		padding: 8px 37px;
+		display: inline-block;
+		border: solid 2px #7086b7;
+
+		&:hover {
+			color: #000;
+			border-color: #000;
+		}
+	}
+}
