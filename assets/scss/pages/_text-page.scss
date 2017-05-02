@@ -32,6 +32,8 @@ section.response {
 		flex-wrap: wrap;
 		margin: 20px 0;
 		justify-content: center;
+		max-width: 100%;
+		width: 100%;
 
 		@media (min-width: $responsive-tablet) {
 			margin: 30px 0 45px 0;
@@ -47,10 +49,12 @@ section.response {
 		margin: 0 auto 20px;
 		padding: 0 40px;
 		outline: none;
+		width: 100%;
 
 		@media (min-width: $responsive-laptop) {
 			flex-basis: 50%;
 			margin: 0;
+			width: 50%;
 		}
 	}
 

@@ -28,14 +28,14 @@ section.product {
 	}
 
 	.photos {
-		flex-basis: 100%;
+		// flex-basis: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		position: relative;
 		width: 100%;
 
 		@media (min-width: $responsive-tablet) {
-			flex-basis: 75%;
+			// flex-basis: 75%;
 			width: 75%;
 			flex-wrap: nowrap;
 		}
@@ -84,14 +84,12 @@ section.product {
 	}
 
 	.main-photo {
-		flex-basis: 100%;
 		margin-bottom: 15px;
 		width: 100%;
 
 		@media (min-width: $responsive-tablet) {
 			margin-bottom: 0;
 			margin-left: 15px;
-			flex-basis: 84%;
 			width: 84%;
 		}
 
@@ -103,12 +101,10 @@ section.product {
 	.thumbnails {
 		display: flex;
 		flex-wrap: nowrap;
-		flex-basis: 100%;
 		justify-content: center;
 		width: 100%;
 
 		@media (min-width: $responsive-tablet) {
-			flex-basis: calc(100% - 84%);
 			width: calc(100% - 84%);
 			flex-wrap: wrap;
 			order: -1;

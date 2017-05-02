@@ -14,10 +14,12 @@
 	aside {
 		flex-basis: 100%;
 		order: 2;
+		width: 100%;
 
 		@media (min-width: $responsive-tablet) {
 			flex-basis: 23.18%;
 			order: inherit;
+			width: 23.18%;
 		}
 
 		&>div {
@@ -31,14 +33,15 @@
 		}
 
 		&+section {
-			flex-basis: 100%;
+			// flex-basis: 100%;
 			margin-bottom: 20px;
 			width: 100%;
 
 			@media (min-width: $responsive-tablet) {
 				margin-bottom: 0;
 				flex-basis: calc(100% - 23.18%);
-				width: calc(100% - 23.18%);;
+				flex-basis: auto;
+				width: calc(100% - 23.18%);
 				padding-left: 15px;
 			}
 
