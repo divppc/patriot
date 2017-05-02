@@ -46,6 +46,7 @@ section.response {
 		flex-basis: 100%;
 		margin: 0 auto 20px;
 		padding: 0 40px;
+		outline: none;
 
 		@media (min-width: $responsive-laptop) {
 			flex-basis: 50%;

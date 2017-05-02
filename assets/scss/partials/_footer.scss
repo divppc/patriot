@@ -29,6 +29,12 @@ footer {
 	}
 
 	.footer-nav {
+
+		flex-basis: 100%;
+
+		@media (min-width: $responsive-tablet) {
+			flex-basis: auto;
+		}
 		
 		ul {
 			

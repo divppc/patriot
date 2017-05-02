@@ -1,11 +1,11 @@
 /*MENU*/
 
 .navigation {
-	// max-height: 0px;
-	// overflow: hidden;
+	max-height: 0px;
+	overflow: hidden;
 
 	@media (min-width: $responsive-tablet) {
-		max-height: 100vh;
+		max-height: 100vh !important;
 		overflow: visible;
 	}
 }
