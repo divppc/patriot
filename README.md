@@ -7,3 +7,4 @@
 Статья http://patriot.div.agency/article.html<br>
 Текстовая страница http://patriot.div.agency/text-page.html<br>
 Продукт http://patriot.div.agency/product.html<br>
+Каталог http://patriot.div.agency/catalog.html<br>
