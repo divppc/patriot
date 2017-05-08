@@ -104,4 +104,38 @@ $(document).ready(function () {
 	photoSlider();
 	//product photos slider end
 
+
+	//callback modal
+	$(".cb").on("click", function (e) {
+		e.preventDefault();
+
+		$("body").addClass("dark");
+		$(".modal.callback").addClass("active");
+	});
+
+	//order modal
+	$(".product-price a").on("click", function (e) {
+		e.preventDefault();
+
+		console.log('asd');
+
+		$("body").addClass("dark");
+		$(".modal.order").addClass("active");
+	});
+
+	//close modal
+	$(".close-btn").on("click", function (e) {
+		e.preventDefault();
+
+		$("body").removeClass("dark");
+		$(".modal").removeClass("active");
+	});
+
+	$("body").on("click", function(e) {
+		if($(e.target).closest(".cb").length == 0 && $(e.target).closest(".product-price a").length == 0) {
+			$("body").removeClass("dark");
+			$(".modal").removeClass("active");
+		};
+	});
+
 });
