@@ -132,7 +132,7 @@ $(document).ready(function () {
 	});
 
 	$("body").on("click", function(e) {
-		if($(e.target).closest(".cb").length == 0 && $(e.target).closest(".product-price a").length == 0) {
+		if($(e.target).closest(".cb").length == 0 && $(e.target).closest(".product-price a").length == 0 && $(e.target).closest(".modal").length == 0) {
 			$("body").removeClass("dark");
 			$(".modal").removeClass("active");
 		};
